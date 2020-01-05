@@ -49,10 +49,14 @@ img{
     position: relative;
     top:50px;
 }
+#hero .wrapper .text .menuIconClosed svg{
+    width:60px;
+    transition: fill 2s, transform 2s  linear;
+    fill: white;
+}
 #hero .wrapper .text  .wrap {
     position: relative;
     top:270px;
-
 }
 #hero .wrapper .text  .wrap h1{
     color:white;
@@ -62,9 +66,44 @@ img{
     margin-bottom: 20px;
 }
 #hero .wrapper .text  .wrap h2{
-    color:red;
+    color:green;
     padding-left: 50px;
     font-family: 'ice';
     font-weight: lighter;
-    font-size: 1.8em;
+    font-size: 33.66px
+}
+#hero .wrapper .text  .wrap .slider{
+    height: 33.66px;
+    overflow: hidden;
+}
+#hero .wrapper .text  .wrap .slider h2:first-of-type{
+    color: blue;
+    animation: slide 5s linear infinite;
+
+}
+#hero .wrapper .text  .wrap .slider h2:last-of-type{
+    color: red;
+}
+@keyframes slide {
+    0% {margin-top: -100.98px;}
+    16.665%{margin-top: -67.32px;}
+    33.3333% {margin-top: -67.32px;}
+    50%{margin-top: -33.66px;}
+    66.66% {margin-top: -33.66px;}
+    83.33% {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
+/*////////////////////////////////////*/
+#try{
+    height: 766px;
+    background-color: #000;
+}
+#try div svg{
+    width:60px;
+    transition: fill 2s, transform 2s  linear;
+    fill: white;
+}
+#try div svg:hover{
+    transform: rotate(45deg);
+    fill: #0f0;
 }
