@@ -11,7 +11,8 @@
 /*Generals */
 section{
     /* width:1366px; */
-    height: 768px;
+    /* height: 768px; */
+    height: 100vh;
 }
 img{
     width:100%;
@@ -42,6 +43,9 @@ img{
     justify-content: center;
     align-items: center;
     
+}
+#hero .wrapper .logo div{
+    width:100%;
 }
 
 #hero .wrapper .text .menuIconClosed{
@@ -94,7 +98,8 @@ img{
     100% {margin-top: 0px;}
 }
 /*////////////////////////////////////*/
-#try{
+/*try*/
+/* #try{
     height: 766px;
     background-color: #000;
 }
@@ -105,5 +110,5 @@ img{
 }
 #try div svg:hover{
     transform: rotate(45deg);
-    fill: #0f0;
-}
+    fill: #0f0; 
+} */
