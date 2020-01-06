@@ -251,9 +251,10 @@ padding-top: 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-#aboutMe .wrapper .container text{
-    width:50%;
+#aboutMe .wrapper .container .text{
+    width:60%;
 }
 #aboutMe .wrapper .container p{
     font-size: 34px;
@@ -286,11 +287,9 @@ padding-top: 80px;
     color:red;
 }
 #aboutMe .wrapper .container .img{
-    width:50%;
+    width:40%;
 }
-#aboutMe .wrapper .container .img img{
-    width: 100%;
-}
+
 #aboutMe .wrapper .container  button{
    font-size: 31px;
    font-family: 'ice';
@@ -302,12 +301,48 @@ padding-top: 80px;
 #aboutMe .wrapper .container  button:hover{
     animation: btn 2s linear infinite;
     cursor: pointer;
+    transition:background-image 2s linear;
 }
 @keyframes btn{
     0%{
-        background-image: linear-gradient(blue,green);
+        background-color: lime;
     }
-    100%{
-        background-image: linear-gradient(red,white);
+    33.33%{
+        background-color: red;
+    }
+    66.66%{
+        background-color: blue;
+    }
+    100% {
+       background-color: lime;
+    }
+}
+@media screen and (max-width:1150px){
+    #aboutMe .wrapper .container{
+        display: block;
+        
+    }
+    #aboutMe .wrapper .container .text{
+        width:100%;
+    }
+    #aboutMe .wrapper .container p{
+        font-size: 34px;
+        font-family: 'ice';
+        color:white;
+        padding-bottom: 20px;
+    }
+    #aboutMe .wrapper .container #email{
+        font-size:20px ;
+    }
+    #aboutMe .wrapper .container p span{
+        font-size: 40px;
+        display: block;
+    }
+    #aboutMe .wrapper .container button{
+        margin-bottom: 50px;
+    }
+    #aboutMe .wrapper .container .img{
+        display: none;
+        padding-bottom: 50px;
     }
 }
