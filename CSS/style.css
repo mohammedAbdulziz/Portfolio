@@ -229,20 +229,85 @@ img{
 
 }
 
-
-
 /*////////////////////////////////////*/
-/*try*/
-/* #try{
-    height: 766px;
-    background-color: #000;
+/*about me*/
+#aboutMe{
+background-color: #03000a;
 }
-#try div svg{
-    width:60px;
-    transition: fill 2s, transform 2s  linear;
-    fill: white;
+#aboutMe .wrapper{
+    width:80%;
+    margin: auto;
 }
-#try div svg:hover{
-    transform: rotate(45deg);
-    fill: #0f0; 
-} */
+#aboutMe .wrapper h1{
+font-family: 'ice';
+text-transform: uppercase;
+color: white;
+font-size: 61px;
+font-weight: normal;
+padding-top: 80px;
+
+}
+#aboutMe .wrapper .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#aboutMe .wrapper .container text{
+    width:50%;
+}
+#aboutMe .wrapper .container p{
+    font-size: 34px;
+    font-family: 'ice';
+    color:white;
+    padding-bottom: 20px;
+}
+#aboutMe .wrapper .container #email{
+    font-size:34px ;
+}
+#aboutMe .wrapper .container p span{
+    font-size: 40px;
+}
+#aboutMe .wrapper .container p:first-of-type{
+    margin-top: 100px;
+}
+#aboutMe .wrapper .container p:nth-of-type(1) span{
+    color:lime;
+}
+#aboutMe .wrapper .container p:nth-of-type(2) span{
+    color:red;
+}
+#aboutMe .wrapper .container p:nth-of-type(3) span{
+    color:blue;
+}
+#aboutMe .wrapper .container p:nth-of-type(4) span{
+    color:lime;
+}
+#aboutMe .wrapper .container p:nth-of-type(5) span{
+    color:red;
+}
+#aboutMe .wrapper .container .img{
+    width:50%;
+}
+#aboutMe .wrapper .container .img img{
+    width: 100%;
+}
+#aboutMe .wrapper .container  button{
+   font-size: 31px;
+   font-family: 'ice';
+   padding: 10px;
+   margin-top: 20px;
+   background-color: rgba(204, 204, 158, 0.979);
+   border: none;
+}
+#aboutMe .wrapper .container  button:hover{
+    animation: btn 2s linear infinite;
+    cursor: pointer;
+}
+@keyframes btn{
+    0%{
+        background-image: linear-gradient(blue,green);
+    }
+    100%{
+        background-image: linear-gradient(red,white);
+    }
+}
