@@ -1,0 +1,81 @@
+:root{
+    --bc:#000;
+    --fontColor:#f7931e;
+}
+/*///////////////////////////////////////////////////////////////////*/
+/*Hero*/
+    /*weclome**************************/
+#hero .wrapper .welcoming .hi{
+    animation: hi 4s linear;
+    animation-fill-mode: forwards;
+}
+ #hero .wrapper .welcoming .name{
+    animation: name 14.6s linear;
+    animation-fill-mode: forwards;
+} 
+ #hero .wrapper .welcoming .name h2{
+    animation: hi 4s linear;
+    animation-fill-mode: forwards;
+} 
+@keyframes hi{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.6
+    }
+    50%{
+        opacity:0.6;
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes name{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity:0.6
+    }
+    50%{
+        opacity:0.6;
+    }
+    85%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+    /*final**************************/
+#hero .wrapper .final{
+    animation: final 4s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes final{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#hero .wrapper .final .nav h3{
+    border-bottom:1px solid;
+    animation: gradient 3s ease-out infinite alternate;
+
+}
+@keyframes gradient{
+    0%{
+        border-color: rgba(255,255,255,0.6);
+
+    }
+    100%{
+        border-color: var(--fontColor);
+
+    }
+}
