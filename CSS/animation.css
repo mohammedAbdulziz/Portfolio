@@ -65,9 +65,20 @@
     }
 }
 #hero .wrapper .final .nav h3{
-    border-bottom:1px solid;
-    animation: gradient 3s ease-out infinite alternate;
+    border-bottom:2px solid;
+    animation: gradient 2s ease-out infinite alternate;
 
+}
+#hero .wrapper .final .nav h3 a:hover{
+animation: aHover 2s linear infinite alternate;
+}
+@keyframes aHover{
+    0%{
+        color:var(--fontColor)
+    }
+    100%{
+        color:rgba(255, 255, 255,0.1)
+    }
 }
 @keyframes gradient{
     0%{
@@ -77,5 +88,38 @@
     100%{
         border-color: var(--fontColor);
 
+    }
+}
+#hero .wrapper .final .nav svg{
+    transition: transform 1s linear;
+}
+#hero .wrapper .final .nav h3 {
+    transition: width 1s linear;
+}
+#hero .wrapper .final .logo embed{
+    transition: left 1s linear;
+}
+#hero .wrapper .final .nav svg .cls-1 {
+    transition: stroke 1s linear;
+  }
+
+  #hero .wrapper .final .nav svg .cls-2 {
+    transition: stroke 1s linear;
+  }
+@media screen and (max-width:900px){
+    #hero .wrapper .final .logo embed{
+        animation: opacity 2s linear;
+    }
+    @keyframes opacity {
+        0%{
+            opacity: 0;
+
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 }

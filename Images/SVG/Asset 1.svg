@@ -932,17 +932,7 @@
               <line class="cls-80" x1="517.1" y1="89.3" x2="82" y2="142"/>
             </g>
           </g>
-          <text class="cls-81" transform="translate(195.8 314.3)">MALKADACE
-          <animate
-          attributeName="cx"
-          from="1"
-          to="600"
-          dur="1s"
-          begin="1s"
-          repeatCount="indefinite"
-          fill="remove"
-          restart="always"
-          />
+          <text id="text" class="cls-81" transform="translate(195.8 314.3)">MALKADACE
           </text>
           <g id="secondGroup">
             <g>
@@ -1061,6 +1051,15 @@
           to="0 303 303.4"
           dur="3s"
           begin="0s"
+          />
+          <animate
+          xlink:href="#text"
+          dur="3s"
+          attributeName="stroke"
+          begin="0s"
+          keyTimes="0; 0.5; 1"
+          values="#f7931e; white; #f7931e"
+          repeatCount="indefinite"
           />
         </g>
       </g>

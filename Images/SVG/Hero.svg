@@ -668,7 +668,7 @@
 		<line class="st81" x1="897.1" y1="169.9" x2="462" y2="222.6"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 575.7871 394.9102)" class="st82 st83 st84">MALKADACE</text>
+<text id="text" transform="matrix(1 0 0 1 575.7871 394.9102)" class="st82 st83 st84">MALKADACEe</text>
 <g>
 	<g>
 		<linearGradient id="SVGID_81_" gradientUnits="userSpaceOnUse" x1="683" y1="687" x2="683" y2="687">
@@ -1127,4 +1127,5 @@
 		<line class="st164" x1="985.8" y1="384" x2="640.8" y2="113.6"/>
 	</g>
 </g>
+
 </svg>

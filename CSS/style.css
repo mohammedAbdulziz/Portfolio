@@ -14,7 +14,10 @@
     font-family: 'ice';
     color:white;
 }
-
+body,html{
+    background-color: black;
+    height: 100%;
+}
 /*/////////////////////////////////////////////////////////////*/
 /*Hero section*/
 #hero{
@@ -91,15 +94,13 @@
     
 }
 #hero .wrapper .final .logo embed{
-    max-width:605.538px;
+    max-width:505.538px;
     position: relative;
     z-index: 1;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-}
-#hero .wrapper .final .logo embed svg text{
-    stroke:red;
+
 }
 #hero .wrapper .final .nav {
     position: absolute;
@@ -113,12 +114,14 @@
     position: absolute;
     top:218.272px;
     left:45px;
-    
+
 }
 #hero .wrapper .final .nav h3 {
     margin-bottom: 20px;
-    width: 350px;
+    width:0%;
     overflow:hidden;
+    height: 50px;
+
 }
 #hero .wrapper .final .nav h3 a{
     text-decoration: none;
@@ -127,10 +130,274 @@
     font-weight: lighter;
     opacity: 0.6;
 }
+#hero .wrapper .final .nav h3 a:hover{
+    cursor: pointer;
 
-#hero .wrapper .final .nav embed{
+}
+#hero .wrapper .final .nav svg .cls-1 {
+    stroke: #f7931e;
+
+  }
+
+  #hero .wrapper .final .nav svg .cls-2 {
+    stroke: #fff;
+
+  }
+#hero .wrapper .final .nav svg{
     display: block;
     width:90.51px;
     position: relative;
     top:77.245px;
 }
+#hero .wrapper .final .nav svg:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:1170px){
+    #hero .wrapper .final .logo embed{
+        width:500px;
+    }
+}
+@media screen and (max-width:1090px){
+    #hero .wrapper .final .logo embed{
+        width:400px;
+    }
+}
+@media screen and (max-width:990px){
+    #hero .wrapper .final .logo embed{
+        width:300px;
+    }
+}
+/*////////////////////////////////////////////////////*/
+/*about*/
+#about{
+    background-color: black;
+    height: 768px;
+    border-top: 2px solid var(--fontColor);
+    border-bottom: 2px solid var(--fontColor);
+    display: none;
+}
+#about .wrapper{
+    width:80%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+#about .wrapper h1{
+padding-top: 75.568px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--fontColor);
+    font-size: 60px;
+    opacity:0.6;
+    width:100%;
+    display:block;
+    z-index: 0;
+}
+
+#about .wrapper .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+#about .wrapper .container .name{
+    width:55%;
+}
+#about .wrapper .container .logo{
+    width:45%;
+  
+}
+#about .wrapper .container .logo embed{
+    width: 90%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+#about .wrapper .container .name{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 80px;
+    grid-row-gap: 80px;
+}
+#about .wrapper .container .name .details{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+#about .wrapper .container .name .details .col1 h3{
+    color:var(--fontColor);
+    opacity: 0.6;
+    font-size: 2vw;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+#about .wrapper .container .name .details .col2 p{
+    opacity:0.6;
+    font-size: 2vw;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+#about .wrapper .container .name .quote h3{
+font-weight: lighter;
+font-size: 2vw;
+opacity: 0.6;
+color:var(--fontColor)
+}
+#about .wrapper .container .name .quote p{
+    width:70%;
+    font-weight: lighter;
+    font-size: 1.7vw;
+    opacity: 0.6;
+    margin-top: 10px;
+    border-left: 2px solid var(--fontColor);
+    border-bottom: 2px solid var(--fontColor);
+    padding:10px;
+}
+@media screen and (max-width:1000px){
+    #about .wrapper .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #about .wrapper .container .name{
+        width:60%;
+    }
+    #about .wrapper .container .logo{
+        width:30%;
+    }
+    #about .wrapper .container .name .details .col1 h3{
+        font-size: 20px;
+    }
+    #about .wrapper .container .name .details .col2 p{
+        font-size: 20px;
+    }
+    #about .wrapper .container .name .quote h3{
+    font-size: 20px;
+    }
+    #about .wrapper .container .name .quote p{
+        font-size: 18px;
+    }
+    #about .wrapper .container .logo embed{
+        top:30%;
+    }
+}
+@media screen and (max-width:905px){
+    #about .wrapper .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #about .wrapper .container .name{
+        width:100%;
+    }
+    #about .wrapper .container .name{
+        grid-row-gap: 20px;
+    }
+    #about .wrapper .container .name .details .col1 h3{
+        font-size: 25px;
+    }
+    #about .wrapper .container .name .details .col2 p{
+        font-size: 25px;
+    }
+    #about .wrapper .container .name .quote h3{
+    font-size: 25px;
+    }
+    #about .wrapper .container .name .quote p{
+        font-size: 20px;
+    }
+    #about .wrapper .container .logo {
+        width:100%;
+    }
+    #about .wrapper .container .logo embed{
+        position: relative;
+        left:50%;
+        top:50%;
+        transform: translateX(-50%) translateX(-50%);
+
+        width:150px;
+    }
+
+}
+@media screen and (max-width:680px){
+    #about .wrapper .container .name .details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #about .wrapper .container .name .details .col1 h3{
+        font-size: 20px;
+    }
+    #about .wrapper .container .name .details .col2 p{
+        font-size: 20px;
+    }
+    #about .wrapper .container .name .quote h3{
+    font-size: 20px;
+    }
+    #about .wrapper .container .name .quote p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:554px){
+    #about .wrapper .container .name .details .col1 h3{
+        font-size: 4vw;
+    }
+    #about .wrapper .container .name .details .col2 p{
+        font-size: 4vw;
+    }
+    #about .wrapper .container .name .quote h3{
+    font-size: 4vw;
+    }
+    #about .wrapper .container .name .quote p{
+        font-size: 4vw;
+    }
+    #about .wrapper .container .logo embed{
+     margin-left: 80px;
+    }
+    #about .wrapper h1{
+    font-size: 40px;
+    }
+    #about .wrapper .back a,#about .wrapper .next a{
+        display: inline-block;  
+        width:40px;
+        text-decoration: none;
+    
+    }
+    #about .wrapper .back a img,  #about .wrapper .next a img{
+        display: block;
+        width:40px;
+    }
+}
+#about .wrapper .back{
+    position: absolute;
+    width:60px;
+    top:76.414px;
+    z-index: 1;
+}
+#about .wrapper .back a{
+    display: inline-block;  
+    width:60px;
+    height:83.879px;
+    text-decoration: none;
+
+}
+#about .wrapper .back a img{
+    display: block;
+}
+#about .wrapper .next{
+    position: absolute;
+    width:60px;
+    right:0px;
+    bottom: 76.414px;
+    z-index: 1;
+}
+#about .wrapper .next a{
+    display: inline-block;  
+    width:60px;
+    height:83.879px;
+    text-decoration: none;
+
+}
+#about .wrapper .next a img{
+    display: block;
+}
+/*******************************************************/
+/*Resume Section
