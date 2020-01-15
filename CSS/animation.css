@@ -123,3 +123,8 @@ animation: aHover 2s linear infinite alternate;
         }
     }
 }
+/*//////////////////////////////////////////////////////////////////*/
+/*resume*/
+#resume .wrapper .container .contt div div{
+    transition: width 4s linear;
+}

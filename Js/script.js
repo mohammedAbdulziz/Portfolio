@@ -94,7 +94,85 @@
     aboutLink[0].addEventListener('click',function(){
         about.style.display="block"
     })
-
-
-
+    
+    
+    
+}
+{
+    //resume section
+    let bar=document.querySelectorAll("#resume .wrapper .container .contt div div");
+    let perce=document.querySelectorAll("#resume .wrapper .container .contt div p");
+    let resume=document.querySelector("#resume");
+    let resumeLink=document.querySelectorAll("#hero .wrapper .final .nav h3 a");
+    resumeLink[1].addEventListener("click",function(){
+        resume.style.display="block";
+        animate(0, 95);
+        animate1(0, 75);
+        animate2(0, 65);
+        animate3(0, 55);
+        setTimeout(function(){
+            bar[0].style.width="100%";
+            bar[1].style.width="100%";
+            bar[2].style.width="100%";
+            bar[3].style.width="100%";
+        })
+    })
+    function animate(start, finish) {
+        setTimeout(function () {
+            perce[0].innerHTML=start + '%';
+            start += 1;
+            if (start <= finish) {
+                animate(start, finish);
+            } else {
+                return;
+            }
+        }, 30);
+    }    
+    function animate1(start, finish) {
+        setTimeout(function () {
+            perce[1].textContent=start + '%';
+            start += 1;
+            if (start <= finish) {
+                animate1(start, finish);
+            } else {
+                return;
+            }
+        }, 30);
+    }    
+    function animate2(start, finish) {
+        setTimeout(function () {
+            perce[2].textContent=start + '%';
+            start += 1;
+            if (start <= finish) {
+                animate2(start, finish);
+            } else {
+                return;
+            }
+        }, 30);
+    }    
+    function animate3(start, finish) {
+        setTimeout(function () {
+            perce[3].textContent=start + '%';
+            start += 1;
+            if (start <= finish) {
+                animate3(start, finish);
+            } else {
+                return;
+            }
+        }, 30);
+    }  
+    let back=document.querySelector("#resume .wrapper .back")
+    back.addEventListener('click',function(){
+        resume.style.display="none"
+        setTimeout(function(){
+            bar[0].style.width="0%";
+            bar[1].style.width="0%";
+            bar[2].style.width="0%";
+            bar[3].style.width="0%";
+        })
+    })
+    let aboutLink=document.querySelectorAll("#hero .wrapper .final .nav h3 a");
+    aboutLink[1].addEventListener('click',function(){
+        resume.style.display="block"
+    })
 }
