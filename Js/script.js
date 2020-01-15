@@ -176,3 +176,27 @@
         resume.style.display="block"
     })
 }
+{
+    //services
+    let services=document.querySelector("#services")
+    let back=document.querySelector("#services .wrapper .back")
+    back.addEventListener('click',function(){
+        services.style.display="none"
+    })
+    let aboutLink=document.querySelectorAll("#hero .wrapper .final .nav h3 a");
+    aboutLink[2].addEventListener('click',function(){
+        services.style.display="block"
+    })
+}
+{
+    //conctact
+    let contact=document.querySelector("#contact")
+    let back=document.querySelector("#contact .wrapper .back")
+    back.addEventListener('click',function(){
+        contact.style.display="none"
+    })
+    let aboutLink=document.querySelectorAll("#hero .wrapper .final .nav h3 a");
+    aboutLink[3].addEventListener('click',function(){
+        contact.style.display="block"
+    })
+}

@@ -609,3 +609,177 @@ body,html{
 #resume .wrapper .next a img{
     display: block;
 }
+/*///////////////////////////////////////////////////////////////*/
+/*Services Section*/
+#services {
+    border-top: 2px solid var(--fontColor);
+    border-bottom: 2px solid var(--fontColor);
+    display: none;
+}
+#services .wrapper {
+    width:80%;
+    position: relative;
+    margin: auto;
+}
+#services .wrapper h1{
+    padding-top: 75.568px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--fontColor);
+    font-size: 60px;
+    opacity:0.6;
+    width:100%;
+    display:block;
+    z-index: 0;
+}
+#services .wrapper .container{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+#services .wrapper .container .cont{
+    width:273px;
+    border:2px solid var(--fontColor);
+    margin-bottom: 20px;
+}
+#services .wrapper .container .cont .img{
+    width:100%;
+
+}
+#services .wrapper .container .cont .img img{
+    width:100%;
+
+}
+#services .wrapper .container .cont .text{
+    margin-top: 30px;
+    font-size: 30px;
+    opacity: 0.6;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#services .wrapper .container .cont .text p{
+    color:var(--fontColor)
+}
+#services .wrapper .container .cont .text p:last-of-type{
+    color:white;
+    font-size: 25px;
+}
+/*back and next*/
+#services .wrapper .back{
+    position: absolute;
+    width:60px;
+    top:76.414px;
+    z-index: 1;
+}
+#services .wrapper .back a{
+    display: inline-block;  
+    width:30px;
+    
+    text-decoration: none;
+    
+}
+#services .wrapper .back a img{
+    display: block;
+}
+#services .wrapper .next{
+    position: absolute;
+    width:60px;
+    right:0px;
+    bottom: 76.414px;
+    z-index: 1;
+}
+#services .wrapper .next a{
+    display: inline-block;  
+    width:30px;
+    text-decoration: none;
+}
+#services .wrapper .next a img{
+    display: block;
+}
+@media screen and (max-width:730px){
+    #services .wrapper .container{
+        display: block
+    }
+    #services .wrapper .container .cont{
+        margin: auto;
+        width:273px;
+        border:2px solid var(--fontColor);
+        margin-bottom: 40px;
+    }
+}
+/*///////////////////*/
+/*contact*/
+#contact .wrapper .back{
+    position: absolute;
+    width:60px;
+    top:76.414px;
+    z-index: 1;
+}
+#contact .wrapper .back a{
+    display: inline-block;  
+    width:30px;
+    
+    text-decoration: none;
+    
+}
+#contact .wrapper .back a img{
+    display: block;
+}
+#contact .wrapper .next{
+    position: absolute;
+    width:60px;
+    right:0px;
+    bottom: 76.414px;
+    z-index: 1;
+}
+#contact .wrapper .next a{
+    display: inline-block;  
+    width:30px;
+    text-decoration: none;
+}
+#contact .wrapper .next a img{
+    display: block;
+}
+#contact {
+    border-top: 2px solid var(--fontColor);
+    border-bottom: 2px solid var(--fontColor);
+    display: none;
+}
+#contact .wrapper {
+    width:80%;
+    position: relative;
+    margin: auto;
+}
+#contact .wrapper h1{
+    padding-top: 75.568px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--fontColor);
+    font-size: 60px;
+    opacity:0.6;
+    width:100%;
+    display:block;
+    z-index: 0;
+}
+#contact .wrapper .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-top: 65px;
+    padding-bottom: 150px;
+}
+#contact .wrapper .container .cont{
+    width:300px;
+}
+#contact .wrapper .container .cont p{
+    font-size: 30px;
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
+#contact .wrapper .container .map {
+  border: 2px solid var(--fontColor);
+}
